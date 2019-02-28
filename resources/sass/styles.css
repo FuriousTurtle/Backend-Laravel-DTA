@@ -1,0 +1,436 @@
+/* LOGO */
+
+.logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 115px;
+    display: inline-block;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    margin: 10px;
+    margin-left: 60px;
+    background-image: url(../../storage/img/close.png);
+}
+
+.logo:hover {
+    background-image: url(../../storage/img/open.png);
+}
+
+.optic,
+.optic:hover {
+    line-height: 115px;
+    font-family: "Acme", sans-serif;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 1em;
+    text-decoration: none;
+}
+
+.opticdiv {
+    margin: 10px;
+    font-size: 30px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-left: 160px;
+    text-align: center;
+}
+
+.recherche {
+    position: relative;
+    width: 300px;
+    height: 36px;
+    grid-column: 3/4;
+    grid-row: 2;
+}
+
+.menu1 div a {
+    text-align: center;
+}
+
+.menu2 {
+    height: 48px;
+}
+
+.menu1 {
+    grid-column: 5/7;
+    grid-row: 2;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.recherche input {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+}
+
+.recherche img {
+    position: absolute;
+    right: 0px;
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    background-color: rgb(190, 190, 190);
+}
+
+.secslide {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.grid {
+    background-color: #232323;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2.4fr;
+    grid-template-rows: 0.5fr 1fr;
+}
+
+.grid a {
+    text-decoration: none;
+}
+
+/* MENU */
+
+.bouton {
+    position: absolute;
+    right: 0px;
+    border-radius: 0px;
+}
+
+.btn-group {
+    position: relative;
+}
+
+.container > div {
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    max-width: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 75% !important;
+    margin: 0 auto;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    margin: 23px auto;
+}
+
+.card-body {
+    font-size: 15px;
+    color: black;
+}
+
+.haut {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.prix {
+    font-size: 26px;
+    color: black;
+    text-align: center;
+    margin-top: -20px;
+    font-weight: bold;
+}
+
+.card-text {
+    text-align: center;
+    margin-top: -20px;
+    font-style: italic;
+}
+
+.card-img-top {
+    height: 180px;
+}
+
+.card {
+    margin: 5px 5px;
+    position: relative;
+}
+
+.card:hover {
+    opacity: 0.7;
+}
+
+.card:hover .infos {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.infos {
+    display: none;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    margin: 40px auto;
+}
+
+body {
+    background-image: url(/img/white-bg.jpg);
+}
+
+/* PRODUIT */
+
+.containerA {
+    display: grid;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 40px;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 100px 120px 1fr;
+    grid-gap: 10px;
+}
+
+.grosse-preview {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.grosse-preview img {
+    width: 450px;
+    height: 275px;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.preview img {
+    margin-bottom: 10px;
+    width: 120px;
+    height: 80px;
+}
+
+.preview img:hover {
+    opacity: 0.4;
+}
+
+.descriptif {
+    grid-column: 3;
+    grid-row: 1/3;
+    margin-top: 30px;
+}
+
+.descriptif h2 {
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.descriptif p {
+    text-align: center;
+}
+
+.optionsitem {
+    margin-top: 30px;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.option2 {
+    background-color: #007bff;
+    color: white;
+}
+
+.option2 a {
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    display: inline;
+    padding: 10px;
+}
+
+.option2 a img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+.p1 {
+    font-style: italic;
+}
+
+.p2 {
+    font-weight: bold;
+}
+
+.option1 {
+    display: inline-block;
+}
+
+.option2 {
+    margin-left: 20%;
+    display: inline-block;
+}
+
+.option2 .p2 {
+    font-size: 10px;
+}
+
+.option2 .p2 span {
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #cfcbc3;
+    margin-top: 50px;
+}
+
+.icon1 {
+    display: block;
+    margin: auto;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.icon1 img {
+    margin-left: 10px;
+}
+
+.int-footer {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 0.25fr 1fr 2fr;
+}
+
+.recherche2 {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 350px;
+    height: 36px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.recherche2 input {
+    position: absolute;
+    width: 100%;
+}
+
+.recherche2 p {
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 35px;
+    line-height: 35px;
+    height: 35px;
+    padding: 3px;
+    background-color: rgb(190, 190, 190);
+}
+
+.icon2 {
+    margin-left: auto;
+    display: block;
+    margin: auto;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.icon2 img {
+    margin-left: 10px;
+}
+
+.titre1 {
+    font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
+    color: #616161;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.foot-text1 {
+    font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
+    color: #616161;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.foot-text2 {
+    font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
+    color: #616161;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.titre2 {
+    font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
+    color: #616161;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.foot-text3 {
+    font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
+    color: #616161;
+    text-align: center;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.titre3 {
+    font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
+    color: #616161;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.int-footer .foot-hover p:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.int-footer .icon-hover:hover {
+    cursor: pointer;
+}
+
+.shoppingline {
+    border: 2px solid grey;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    align-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+}
+
+.lineitem {
+    flex-grow: 1;
+    line-height: 70px;
+    margin-bottom: 0px;
+}

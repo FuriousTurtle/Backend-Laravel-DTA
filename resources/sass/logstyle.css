@@ -1,0 +1,9 @@
+.navbar {
+    background-color: #232323;
+}
+
+.navbar a,
+.navbar p {
+    color: white !important;
+    font-weight: bold;
+}
