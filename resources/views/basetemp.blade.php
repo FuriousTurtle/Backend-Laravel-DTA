@@ -1,5 +1,4 @@
 <?php
-use Illuminate\Support\Facades\Auth;
 ?>
 <!DOCTYPE html>
 <html>
@@ -41,8 +40,8 @@ use Illuminate\Support\Facades\Auth;
                         style="height: 25px; width: 25px;display:block;margin: 0 auto;background-color: white;border-radius: 50%;padding: 1px;" />
                     Visagisme</a>
             </div>
-            <?php if (Auth::check()) {
-    echo "
+            @auth<?php
+echo "
             <div>
             <a href=\"profil\">
                 <img src=\"../storage/img/user.png\"
@@ -56,8 +55,8 @@ use Illuminate\Support\Facades\Auth;
               Panier  </a>
             </div>
             ";
-} else {
-    echo "
+?>@endauth @guest<?php
+echo "
     <div>
     <a href=\"profil\">
         <img src=\"../storage/img/user.png\"
@@ -65,7 +64,8 @@ use Illuminate\Support\Facades\Auth;
         Connexion</a>
     </div>
     ";
-}?>
+?>
+            @endguest
         </div>
     </div>
     <nav class=" menu2 bg-primary">
